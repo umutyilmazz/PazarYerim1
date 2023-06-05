@@ -372,7 +372,7 @@ class SiparisMenu(UrunMenusu):
                                 toplam += (urunFiyat * urunAdet)
                                 break
                         else: 
-                            print(f"Ürünün Stok Miktarı İstenenden Düşük!\n{urunStoktakiAd} Ürününün Stok Miktarı: {urunStokMiktar}")
+                            print(f"Ürünün Stok Miktarı İstenenden Düşük!\n{urunStoktakiAd} Ürününün Stok Miktarı: {urunStokMiktar}\n")
                 i += 1
 
         if not len(icerikListe) == 0 and not len(adetListe) == 0:
@@ -399,6 +399,7 @@ siparisMenusu = SiparisMenu()
 
 # Menü
 print("PazarYerim'e HoşGeldiniz!".center(50,"-"))
+print()
 while True:
     print("---Ana Menü---\n1-Ürün Yönetimi\n2-Sipariş Yönetimi\n3-Çıkış Yap\n")
     islem1 = input("Yapacağınız İşlem'in Numarasını Seçiniz (1-3): ")
